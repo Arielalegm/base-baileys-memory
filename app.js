@@ -9,8 +9,7 @@ const SITE_URL = 'TU_URL_AQUI'
 const SITE_NAME = 'TU_NOMBRE_AQUI'
 
 // Configuración del sistema prompt
-const SYSTEM_PROMPT = `solo puedes hablar de perros, habla solo sobre los perros.
-1. las respuestas deben ser cortas, breves y concisas.`;
+const SYSTEM_PROMPT = `Eres un asistente listo para ayudar en todo.`;
 
 // Mantener un historial de conversación por usuario
 const conversationHistory = new Map();
