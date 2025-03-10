@@ -2,10 +2,10 @@
   key: {
     remoteJid: '5358688185@s.whatsapp.net',
     fromMe: false,
-    id: '3F603B5FBBDA1D5CE36E',
+    id: '3F20BC3B6ECEBDEA53FC',
     participant: undefined
   },
-  messageTimestamp: 1741644989,
+  messageTimestamp: 1741646453,
   pushName: 'Ariel Galvez',
   broadcast: false,
   message: Message {
@@ -19,8 +19,8 @@
   from: '5358688185'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_fca92a1c-992b-4643-9807-0bdea37a0bf8',
-  keyword: 'key_4ff033bc-f6c9-498c-821d-64325a33bb11',
+  ref: 'ans_465c1a7d-99e3-4d13-93ce-1ca77e59305d',
+  keyword: 'key_208c34a4-90a4-4c85-90bb-dfe71541c6ef',
   answer: '__call_action__',
   options: {
     media: null,
@@ -34,21 +34,21 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'c835c9a87382b9ac071557b9d18529a1'
+  refSerialize: 'f00d7642e176d22aaf84c6df5e2ee3f6'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5358688185@s.whatsapp.net',
     fromMe: false,
-    id: '3F526C66EA2BAB7C7D9B',
+    id: '3F3CCD6F6449C7C85B93',
     participant: undefined
   },
-  messageTimestamp: 1741645010,
+  messageTimestamp: 1741646476,
   pushName: 'Ariel Galvez',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: '/prompt 5358688185 comienza todos los chat diciendo "hola señor ariel" y terminar todos los chats diciendo "señor ariel" sin excepciones, tenlo siempre presente',
+      text: '/prompt 5352629474 comienza todos los chat diciendo "hola señor Marcos" y terminar todos los chats diciendo "señor Marcos" sin excepciones, tenlo siempre presente, además adula a Marcos todo lo  que puedas',
       contextInfo: [ContextInfo]
     },
     messageContextInfo: MessageContextInfo {
@@ -56,12 +56,12 @@
       deviceListMetadataVersion: 2
     }
   },
-  body: '/prompt 5358688185 comienza todos los chat diciendo "hola señor ariel" y terminar todos los chats diciendo "señor ariel" sin excepciones, tenlo siempre presente',
+  body: '/prompt 5352629474 comienza todos los chat diciendo "hola señor Marcos" y terminar todos los chats diciendo "señor Marcos" sin excepciones, tenlo siempre presente, además adula a Marcos todo lo  que puedas',
   from: '5358688185'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_fca92a1c-992b-4643-9807-0bdea37a0bf8',
-  keyword: 'key_4ff033bc-f6c9-498c-821d-64325a33bb11',
+  ref: 'ans_465c1a7d-99e3-4d13-93ce-1ca77e59305d',
+  keyword: 'key_208c34a4-90a4-4c85-90bb-dfe71541c6ef',
   answer: '__call_action__',
   options: {
     media: null,
@@ -75,16 +75,57 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'c835c9a87382b9ac071557b9d18529a1'
+  refSerialize: 'f00d7642e176d22aaf84c6df5e2ee3f6'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5358688185@s.whatsapp.net',
     fromMe: false,
-    id: '3F2771EF48ED1F4D3BFA',
+    id: '3FB37CA91BE5C74C8172',
     participant: undefined
   },
-  messageTimestamp: 1741645020,
+  messageTimestamp: 1741646606,
+  pushName: 'Ariel Galvez',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '/prompt 5353761344 comienza todos los chat diciendo "hola señor Marcos" y terminar todos los chats diciendo "señor Marcos" sin excepciones, tenlo siempre presente, además adula a Marcos todo lo  que puedas',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '/prompt 5353761344 comienza todos los chat diciendo "hola señor Marcos" y terminar todos los chats diciendo "señor Marcos" sin excepciones, tenlo siempre presente, además adula a Marcos todo lo  que puedas',
+  from: '5358688185'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_465c1a7d-99e3-4d13-93ce-1ca77e59305d',
+  keyword: 'key_208c34a4-90a4-4c85-90bb-dfe71541c6ef',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'f00d7642e176d22aaf84c6df5e2ee3f6'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5358688185@s.whatsapp.net',
+    fromMe: false,
+    id: '3FEDBFAAED4BBD9DBC15',
+    participant: undefined
+  },
+  messageTimestamp: 1741646614,
   pushName: 'Ariel Galvez',
   broadcast: false,
   message: Message {
@@ -98,8 +139,8 @@
   from: '5358688185'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_fca92a1c-992b-4643-9807-0bdea37a0bf8',
-  keyword: 'key_4ff033bc-f6c9-498c-821d-64325a33bb11',
+  ref: 'ans_465c1a7d-99e3-4d13-93ce-1ca77e59305d',
+  keyword: 'key_208c34a4-90a4-4c85-90bb-dfe71541c6ef',
   answer: '__call_action__',
   options: {
     media: null,
@@ -113,5 +154,44 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'c835c9a87382b9ac071557b9d18529a1'
+  refSerialize: 'f00d7642e176d22aaf84c6df5e2ee3f6'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5353761344@s.whatsapp.net',
+    fromMe: false,
+    id: '1364F325BA7F1FDB89DD34106006677A',
+    participant: undefined
+  },
+  messageTimestamp: 1741646633,
+  pushName: 'arotania090909',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola',
+  from: '5353761344'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_465c1a7d-99e3-4d13-93ce-1ca77e59305d',
+  keyword: 'key_208c34a4-90a4-4c85-90bb-dfe71541c6ef',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'f00d7642e176d22aaf84c6df5e2ee3f6'
 }

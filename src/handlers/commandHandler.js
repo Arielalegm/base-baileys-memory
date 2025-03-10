@@ -6,11 +6,24 @@ function handleCommands(message, userId) {
     if (message.startsWith('/prompt')) {
         const parts = message.split(' ');
         if (parts.length < 2) {
-            return '❌ Uso correcto: /prompt <nuevo prompt>\nEjemplo: /prompt Actúa como un experto en marketing';
+            return '❌ Uso correcto:\n/prompt <nuevo prompt>\nó\n/prompt <número> <nuevo prompt>\nEjemplo:\n/prompt Actúa como un experto\nó\n/prompt 1234567890 Actúa como un experto';
         }
-        const newPrompt = parts.slice(1).join(' ');
-        setCustomPrompt(userId, newPrompt);
-        return `✅ Nuevo prompt configurado:\n"${newPrompt}"`;
+        
+        let targetNumber = userId;
+        let promptIndex = 1;
+        
+        // Verificar si el segundo argumento es un número de teléfono
+        if (/^\d+$/.test(parts[1])) {
+            targetNumber = parts[1];
+            promptIndex = 2;
+            if (parts.length < 3) {
+                return '❌ Debes especificar un prompt después del número de teléfono';
+            }
+        }
+        
+        const newPrompt = parts.slice(promptIndex).join(' ');
+        setCustomPrompt(targetNumber, newPrompt);
+        return `✅ Nuevo prompt configurado para ${targetNumber}:\n"${newPrompt}"`;
     }
 
     const [command, targetNumber] = message.toLowerCase().split(' ');
