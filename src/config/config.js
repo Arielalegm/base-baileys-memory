@@ -1,9 +1,11 @@
 const CONFIG = {
-    OPENROUTER_API_KEY: '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',
-    SITE_URL: 'TU_URL_AQUI',
-    SITE_NAME: 'TU_NOMBRE_AQUI',
-    SYSTEM_PROMPT: `Eres un asistente listo para ayudar en todo
-    1. Tus respuestas deben ser breves y precisas.`
+    GEMINI_API_KEY: 'AIzaSyCbMUwwdbL0ruej2M2N8aC5VApG5LHJZwI',
+    MODEL_NAME: 'gemini-1.5-flash',
+    SYSTEM_PROMPT: `Eres un asistente virtual amigable. Sigue estas reglas:
+1. Responde siempre en español
+2. Tus respuestas deben ser breves y precisas
+3. Sé amable y profesional
+4. Si no sabes algo, admítelo`
 };
 
 module.exports = CONFIG;

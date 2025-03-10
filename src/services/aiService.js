@@ -1,8 +1,10 @@
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 const CONFIG = require('../config/config');
 
+const genAI = new GoogleGenerativeAI(CONFIG.GEMINI_API_KEY);
 const conversationHistory = new Map();
 const bannedUsers = new Set();
-const customPrompts = new Map(); // Nuevo Map para prompts personalizados
+const customPrompts = new Map();
 
 async function getAIResponse(userMessage, userId) {
     try {
@@ -10,34 +12,29 @@ async function getAIResponse(userMessage, userId) {
             conversationHistory.set(userId, []);
         }
         const userHistory = conversationHistory.get(userId);
+        const currentPrompt = getCustomPrompt(userId);
 
-        const currentPrompt = customPrompts.has(userId) 
-            ? customPrompts.get(userId) 
-            : CONFIG.SYSTEM_PROMPT;
+        // Combinar el prompt del sistema con el mensaje del usuario
+        const fullMessage = `${currentPrompt}\n\nUsuario: ${userMessage}`;
 
-        const messages = [
-            { role: "system", content: currentPrompt },
-            ...userHistory,
-            { role: "user", content: userMessage }
-        ];
-
-        const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-            method: "POST",
-            headers: {
-                "Authorization": `Bearer ${CONFIG.OPENROUTER_API_KEY}`,
-                "HTTP-Referer": CONFIG.SITE_URL,
-                "X-Title": CONFIG.SITE_NAME,
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                "model": "deepseek/deepseek-chat:free",
-                "messages": messages
-            })
+        const model = genAI.getGenerativeModel({ model: CONFIG.MODEL_NAME });
+        
+        const chat = model.startChat({
+            history: userHistory.map(msg => ({
+                role: msg.role === 'user' ? 'user' : 'model',
+                parts: [{ text: msg.content }]
+            })),
+            generationConfig: {
+                maxOutputTokens: 1000,
+                temperature: 0.7
+            }
         });
 
-        const data = await response.json();
-        const aiResponse = data.choices[0].message.content;
+        const result = await chat.sendMessage(fullMessage);
+        const response = await result.response;
+        const aiResponse = response.text();
 
+        // Guardar solo el mensaje original del usuario y la respuesta
         userHistory.push({ role: "user", content: userMessage });
         userHistory.push({ role: "assistant", content: aiResponse });
 

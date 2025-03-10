@@ -5,13 +5,12 @@ let botActive = true;
 function handleCommands(message, userId) {
     if (message.startsWith('/prompt')) {
         const parts = message.split(' ');
-        if (parts.length < 3) {
-            return '❌ Uso correcto: /prompt <número> <nuevo prompt>';
+        if (parts.length < 2) {
+            return '❌ Uso correcto: /prompt <nuevo prompt>\nEjemplo: /prompt Actúa como un experto en marketing';
         }
-        const targetNumber = parts[1];
-        const newPrompt = parts.slice(2).join(' ');
-        setCustomPrompt(targetNumber, newPrompt);
-        return `✅ Nuevo prompt configurado para ${targetNumber}:\n"${newPrompt}"`;
+        const newPrompt = parts.slice(1).join(' ');
+        setCustomPrompt(userId, newPrompt);
+        return `✅ Nuevo prompt configurado:\n"${newPrompt}"`;
     }
 
     const [command, targetNumber] = message.toLowerCase().split(' ');

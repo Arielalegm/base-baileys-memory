@@ -2,25 +2,25 @@
   key: {
     remoteJid: '5358688185@s.whatsapp.net',
     fromMe: false,
-    id: '3F6F559ECDB630D14A2A',
+    id: '3F603B5FBBDA1D5CE36E',
     participant: undefined
   },
-  messageTimestamp: 1741595441,
+  messageTimestamp: 1741644989,
   pushName: 'Ariel Galvez',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage { text: '/hora', contextInfo: [ContextInfo] },
+    extendedTextMessage: ExtendedTextMessage { text: 'hola', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: '/hora',
+  body: 'hola',
   from: '5358688185'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_cd1ed954-6925-4207-b8cd-84db0a66b141',
-  keyword: 'key_e0910169-f2e3-4e45-a003-dd1203fc2821',
+  ref: 'ans_fca92a1c-992b-4643-9807-0bdea37a0bf8',
+  keyword: 'key_4ff033bc-f6c9-498c-821d-64325a33bb11',
   answer: '__call_action__',
   options: {
     media: null,
@@ -34,21 +34,21 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '30514450cd79c773819675a7fadb8aa6'
+  refSerialize: 'c835c9a87382b9ac071557b9d18529a1'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5358688185@s.whatsapp.net',
     fromMe: false,
-    id: '3F6B113F7204B4033828',
+    id: '3F526C66EA2BAB7C7D9B',
     participant: undefined
   },
-  messageTimestamp: 1741595447,
+  messageTimestamp: 1741645010,
   pushName: 'Ariel Galvez',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: 'que hora es',
+      text: '/prompt 5358688185 comienza todos los chat diciendo "hola señor ariel" y terminar todos los chats diciendo "señor ariel" sin excepciones, tenlo siempre presente',
       contextInfo: [ContextInfo]
     },
     messageContextInfo: MessageContextInfo {
@@ -56,12 +56,12 @@
       deviceListMetadataVersion: 2
     }
   },
-  body: 'que hora es',
+  body: '/prompt 5358688185 comienza todos los chat diciendo "hola señor ariel" y terminar todos los chats diciendo "señor ariel" sin excepciones, tenlo siempre presente',
   from: '5358688185'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_cd1ed954-6925-4207-b8cd-84db0a66b141',
-  keyword: 'key_e0910169-f2e3-4e45-a003-dd1203fc2821',
+  ref: 'ans_fca92a1c-992b-4643-9807-0bdea37a0bf8',
+  keyword: 'key_4ff033bc-f6c9-498c-821d-64325a33bb11',
   answer: '__call_action__',
   options: {
     media: null,
@@ -75,34 +75,31 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '30514450cd79c773819675a7fadb8aa6'
+  refSerialize: 'c835c9a87382b9ac071557b9d18529a1'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '5358688185@s.whatsapp.net',
     fromMe: false,
-    id: '3F13B9D6A27E94E3EEA6',
+    id: '3F2771EF48ED1F4D3BFA',
     participant: undefined
   },
-  messageTimestamp: 1741595461,
+  messageTimestamp: 1741645020,
   pushName: 'Ariel Galvez',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'a como estamos hoy ?',
-      contextInfo: [ContextInfo]
-    },
+    extendedTextMessage: ExtendedTextMessage { text: 'hola', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'a como estamos hoy ?',
+  body: 'hola',
   from: '5358688185'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_cd1ed954-6925-4207-b8cd-84db0a66b141',
-  keyword: 'key_e0910169-f2e3-4e45-a003-dd1203fc2821',
+  ref: 'ans_fca92a1c-992b-4643-9807-0bdea37a0bf8',
+  keyword: 'key_4ff033bc-f6c9-498c-821d-64325a33bb11',
   answer: '__call_action__',
   options: {
     media: null,
@@ -116,87 +113,5 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '30514450cd79c773819675a7fadb8aa6'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5358688185@s.whatsapp.net',
-    fromMe: false,
-    id: '3F89B9EF945A2635BB3D',
-    participant: undefined
-  },
-  messageTimestamp: 1741595496,
-  pushName: 'Ariel Galvez',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'que hora es dentro de una hora',
-      contextInfo: [ContextInfo]
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'que hora es dentro de una hora',
-  from: '5358688185'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_cd1ed954-6925-4207-b8cd-84db0a66b141',
-  keyword: 'key_e0910169-f2e3-4e45-a003-dd1203fc2821',
-  answer: '__call_action__',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '30514450cd79c773819675a7fadb8aa6'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '5358688185@s.whatsapp.net',
-    fromMe: false,
-    id: '3F4087EBEF32AF24D4DD',
-    participant: undefined
-  },
-  messageTimestamp: 1741595505,
-  pushName: 'Ariel Galvez',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'dime la hora',
-      contextInfo: [ContextInfo]
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'dime la hora',
-  from: '5358688185'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_cd1ed954-6925-4207-b8cd-84db0a66b141',
-  keyword: 'key_e0910169-f2e3-4e45-a003-dd1203fc2821',
-  answer: '__call_action__',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '30514450cd79c773819675a7fadb8aa6'
+  refSerialize: 'c835c9a87382b9ac071557b9d18529a1'
 }
