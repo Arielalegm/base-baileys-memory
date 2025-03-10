@@ -2,28 +2,25 @@
   key: {
     remoteJid: '5358688185@s.whatsapp.net',
     fromMe: false,
-    id: '3F6ED2D3E7A556DBF13A',
+    id: '3FE22041BBB315ADB9DB',
     participant: undefined
   },
-  messageTimestamp: 1741590394,
+  messageTimestamp: 1741593695,
   pushName: 'Ariel Galvez',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'Quién es el actual presidente de Estados Unidos',
-      contextInfo: [ContextInfo]
-    },
+    extendedTextMessage: ExtendedTextMessage { text: 'hola', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Quién es el actual presidente de Estados Unidos',
+  body: 'hola',
   from: '5358688185'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_a6908ea6-a830-4824-ae3d-4e248d7c3937',
-  keyword: 'key_a74d038e-53d8-44a2-996a-433649aacd32',
+  ref: 'ans_132c0275-f4ac-4ad1-af70-d707b051a3ca',
+  keyword: 'key_eb0231fb-ba5e-4032-966d-15272b88929f',
   answer: '__call_action__',
   options: {
     media: null,
@@ -37,5 +34,263 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '8f0f31c8849113bba03010a620f98755'
+  refSerialize: '1dcffabf11fb4b80b89d8cf4c0c4bf25'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5358688185@s.whatsapp.net',
+    fromMe: false,
+    id: '3FED34F1CA27F1305613',
+    participant: undefined
+  },
+  messageTimestamp: 1741593714,
+  pushName: 'Ariel Galvez',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'la casa era verde',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'la casa era verde',
+  from: '5358688185'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_132c0275-f4ac-4ad1-af70-d707b051a3ca',
+  keyword: 'key_eb0231fb-ba5e-4032-966d-15272b88929f',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '1dcffabf11fb4b80b89d8cf4c0c4bf25'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5363932970@s.whatsapp.net',
+    fromMe: false,
+    id: '2A61DC991ADAC70BB183B4C95BEF560B',
+    participant: undefined
+  },
+  messageTimestamp: 1741593803,
+  pushName: 'ArO Responder',
+  broadcast: false,
+  message: Message {
+    conversation: '/reset 5358688185',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  verifiedBizName: 'ArO Responder',
+  body: '/reset 5358688185',
+  from: '5363932970'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_132c0275-f4ac-4ad1-af70-d707b051a3ca',
+  keyword: 'key_eb0231fb-ba5e-4032-966d-15272b88929f',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '1dcffabf11fb4b80b89d8cf4c0c4bf25'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5363932970@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE575A73B86C52D',
+    participant: undefined
+  },
+  messageTimestamp: 1741593806,
+  pushName: 'ArO Responder',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'Entendido. ¿En qué puedo ayudarte ahora? 😊'
+    }
+  },
+  body: 'Entendido. ¿En qué puedo ayudarte ahora? 😊',
+  from: '5363932970'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_132c0275-f4ac-4ad1-af70-d707b051a3ca',
+  keyword: 'key_eb0231fb-ba5e-4032-966d-15272b88929f',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '1dcffabf11fb4b80b89d8cf4c0c4bf25'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5363932970@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE552393DE9934B',
+    participant: undefined
+  },
+  messageTimestamp: 1741593815,
+  pushName: 'ArO Responder',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¡De nada! Estoy listo para ayudarte. ¿Qué necesitas? Puede ser una pregunta, una duda, o lo que desees. ¡Dímelo! 👋😊'
+    }
+  },
+  body: '¡De nada! Estoy listo para ayudarte. ¿Qué necesitas? Puede ser una pregunta, una duda, o lo que desees. ¡Dímelo! 👋😊',
+  from: '5363932970'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_132c0275-f4ac-4ad1-af70-d707b051a3ca',
+  keyword: 'key_eb0231fb-ba5e-4032-966d-15272b88929f',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '1dcffabf11fb4b80b89d8cf4c0c4bf25'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5363932970@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE59881B253FEAD',
+    participant: undefined
+  },
+  messageTimestamp: 1741593824,
+  pushName: 'ArO Responder',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¡Gracias a ti por tu amabilidad! 😊 Si tienes alguna pregunta o necesitas ayuda con algo, estoy aquí para ti. ¿Qué te gustaría abordar hoy? 🚀'
+    }
+  },
+  body: '¡Gracias a ti por tu amabilidad! 😊 Si tienes alguna pregunta o necesitas ayuda con algo, estoy aquí para ti. ¿Qué te gustaría abordar hoy? 🚀',
+  from: '5363932970'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_132c0275-f4ac-4ad1-af70-d707b051a3ca',
+  keyword: 'key_eb0231fb-ba5e-4032-966d-15272b88929f',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '1dcffabf11fb4b80b89d8cf4c0c4bf25'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5358688185@s.whatsapp.net',
+    fromMe: false,
+    id: '3F7345CD4F24906D64A8',
+    participant: undefined
+  },
+  messageTimestamp: 1741593828,
+  pushName: 'Ariel Galvez',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'de que color era la casa ?',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'de que color era la casa ?',
+  from: '5358688185'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_132c0275-f4ac-4ad1-af70-d707b051a3ca',
+  keyword: 'key_eb0231fb-ba5e-4032-966d-15272b88929f',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '1dcffabf11fb4b80b89d8cf4c0c4bf25'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5363932970@s.whatsapp.net',
+    fromMe: false,
+    id: 'BAE5A698E90562AD',
+    participant: undefined
+  },
+  messageTimestamp: 1741593831,
+  pushName: 'ArO Responder',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '¡Genial! 🚀 Aquí tienes algunas ideas:  \n' +
+        '- **Dudas**: Ciencia, tecnología, historia, etc.  \n' +
+        '- **Creatividad**: Ideas para proyectos, escritura, arte.  \n' +
+        '- **Curiosidades**: Datos interesantes o random.  \n' +
+        '\n' +
+        '¿Qué prefieres explorar hoy? 😊✨'
+    }
+  },
+  body: '¡Genial! 🚀 Aquí tienes algunas ideas:  \n' +
+    '- **Dudas**: Ciencia, tecnología, historia, etc.  \n' +
+    '- **Creatividad**: Ideas para proyectos, escritura, arte.  \n' +
+    '- **Curiosidades**: Datos interesantes o random.  \n' +
+    '\n' +
+    '¿Qué prefieres explorar hoy? 😊✨',
+  from: '5363932970'
 }

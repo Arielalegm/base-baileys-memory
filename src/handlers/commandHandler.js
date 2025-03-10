@@ -18,6 +18,10 @@ function handleCommands(message, userId) {
     
     switch (command) {
         case '/reset':
+            if (targetNumber) {
+                conversationHistory.delete(targetNumber);
+                return `🔄 Bot reiniciado para el número ${targetNumber}. Historial de conversación limpiado.`;
+            }
             conversationHistory.delete(userId);
             return '🔄 Bot reiniciado. Historial de conversación limpiado.';
         case '/pause':
