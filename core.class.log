@@ -1,0 +1,41 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5358688185@s.whatsapp.net',
+    fromMe: false,
+    id: '3F6ED2D3E7A556DBF13A',
+    participant: undefined
+  },
+  messageTimestamp: 1741590394,
+  pushName: 'Ariel Galvez',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'Quién es el actual presidente de Estados Unidos',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Quién es el actual presidente de Estados Unidos',
+  from: '5358688185'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_a6908ea6-a830-4824-ae3d-4e248d7c3937',
+  keyword: 'key_a74d038e-53d8-44a2-996a-433649aacd32',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '8f0f31c8849113bba03010a620f98755'
+}
