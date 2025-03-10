@@ -1,5 +1,5 @@
 const CONFIG = {
-    OPENROUTER_API_KEY: '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',
+    OPENROUTER_API_KEY: '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',
     SITE_URL: 'TU_URL_AQUI',
     SITE_NAME: 'TU_NOMBRE_AQUI',
     SYSTEM_PROMPT: `Eres un asistente listo para ayudar en todo

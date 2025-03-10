@@ -1,4 +1,5 @@
 const CONFIG = require('../config/config');
+const { getCurrentTime, getCurrentDate, getFullDateTime } = require('./timeService');
 
 const conversationHistory = new Map();
 const bannedUsers = new Set();
@@ -6,6 +7,19 @@ const customPrompts = new Map(); // Nuevo Map para prompts personalizados
 
 async function getAIResponse(userMessage, userId) {
     try {
+        const lowerMessage = userMessage.toLowerCase();
+        
+        // Verificar si es una pregunta sobre tiempo
+        if (lowerMessage.includes('qué hora es') || lowerMessage.includes('que hora es')) {
+            return `🕐 La hora actual es: ${getCurrentTime()}`;
+        }
+        if (lowerMessage.includes('qué fecha es') || lowerMessage.includes('que fecha es')) {
+            return `📅 La fecha actual es: ${getCurrentDate()}`;
+        }
+        if (lowerMessage.includes('fecha y hora')) {
+            return `⏰ Fecha y hora actuales: ${getFullDateTime()}`;
+        }
+
         if (!conversationHistory.has(userId)) {
             conversationHistory.set(userId, []);
         }

@@ -1,4 +1,5 @@
 const { conversationHistory, banUser, unbanUser, setCustomPrompt, getCustomPrompt } = require('../services/aiService');
+const { getCurrentTime, getCurrentDate, getFullDateTime } = require('../services/timeService');
 
 let botActive = true;
 
@@ -38,6 +39,12 @@ function handleCommands(message, userId) {
             if (!targetNumber) return '❌ Debes especificar un número. Ejemplo: /ban_off 1234567890';
             unbanUser(targetNumber);
             return `✅ Usuario ${targetNumber} ha sido desbaneado.`;
+        case '/hora':
+            return `🕐 La hora actual es: ${getCurrentTime()}`;
+        case '/fecha':
+            return `📅 La fecha actual es: ${getCurrentDate()}`;
+        case '/fechahora':
+            return `⏰ Fecha y hora actuales: ${getFullDateTime()}`;
         default:
             return null;
     }
