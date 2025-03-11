@@ -29,6 +29,19 @@ function handleCommands(message, userId) {
     const [command, targetNumber] = message.toLowerCase().split(' ');
     
     switch (command) {
+        case '/comandos':
+            return `📝 *Comandos disponibles:*
+
+/reset - Reinicia el historial de conversación
+/reset [número] - Reinicia el historial para un número específico
+/pause - Pausa el bot
+/play - Reactiva el bot
+/ban_on [número] - Banea a un usuario
+/ban_off [número] - Desbanea a un usuario
+/prompt [texto] - Configura un nuevo prompt
+/prompt [número] [texto] - Configura un prompt para un número específico
+/comandos - Muestra esta lista de comandos`;
+
         case '/reset':
             if (targetNumber) {
                 conversationHistory.delete(targetNumber);

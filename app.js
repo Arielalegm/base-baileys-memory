@@ -5,6 +5,7 @@ const MockAdapter = require('@bot-whatsapp/database/mock')
 
 const { getAIResponse, isBanned } = require('./src/services/aiService')
 const { handleCommands, getBotActive } = require('./src/handlers/commandHandler')
+const TimeService = require('./src/services/timeService');
 
 const flowCatchAll = addKeyword([])
     .addAction(async (ctx, { flowDynamic }) => {
@@ -40,13 +41,14 @@ const main = async () => {
     const adapterFlow = createFlow([flowCatchAll])
     const adapterProvider = createProvider(BaileysProvider)
 
-    createBot({
+    const client = createBot({
         flow: adapterFlow,
         provider: adapterProvider,
         database: adapterDB,
     })
 
     QRPortalWeb()
+    client.timeService = new TimeService(client);
 }
 
 main()
