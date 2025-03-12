@@ -2,28 +2,25 @@
   key: {
     remoteJid: '5358688185@s.whatsapp.net',
     fromMe: false,
-    id: '3F81BEB5330A6F51DF75',
+    id: '3FD968304FC3A1D3B76C',
     participant: undefined
   },
-  messageTimestamp: 1741682242,
+  messageTimestamp: 1741762215,
   pushName: 'Ariel Galvez',
   broadcast: false,
   message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: '/comandos',
-      contextInfo: [ContextInfo]
-    },
+    extendedTextMessage: ExtendedTextMessage { text: 'hola', contextInfo: [ContextInfo] },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: '/comandos',
+  body: 'hola',
   from: '5358688185'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_e090d445-af08-4b2b-a559-21560246a82a',
-  keyword: 'key_349a53fb-ca65-4097-8d99-87ec02e68ad1',
+  ref: 'ans_f8a24d8c-90be-4a8a-92e9-2da03574cf58',
+  keyword: 'key_38a79998-71b5-448c-b1b5-95fe0b547fef',
   answer: '__call_action__',
   options: {
     media: null,
@@ -37,5 +34,5 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'd89404cebd13d13ab08187b232768dd2'
+  refSerialize: '99f04139f7d0a482d4117a8c2f59056b'
 }
