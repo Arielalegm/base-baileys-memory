@@ -1,0 +1,57 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5358688185@s.whatsapp.net',
+    fromMe: false,
+    id: '3FC7D85A9B4DB25EDE96',
+    participant: undefined
+  },
+  messageTimestamp: 1741917976,
+  pushName: 'iariel',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: 'hola', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'iariel',
+  body: 'hola',
+  from: '5358688185'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b9e1fb4c-83c8-43e4-9990-dd21302ad8a4',
+  keyword: 'key_46f40b50-2aab-423b-ab8e-932ce631d823',
+  answer: '¡Hola! 👋 Soy tu nuevo asistente de IA en WhatsApp. 😊 Puedo ayudarte con:\n' +
+    '*   Responder preguntas generales.\n' +
+    '*   Traducir texto.\n' +
+    '*   Generar ideas.\n' +
+    '*   Resumir textos.\n' +
+    '*   Proporcionar información.\n' +
+    '*   Ayudar a redactar.\n' +
+    '*   Ofrecer consejos.\n' +
+    '*   Convertir unidades.\n' +
+    '*   Crear historias.\n' +
+    '\n' +
+    '*Importante:* No estoy conectado a internet. 😅\n' +
+    '\n' +
+    '*Comandos útiles:*\n' +
+    '*   /reset: Borra mi memoria y comienza un nuevo chat. 🧠\n' +
+    '*   /prompt: Modifica mi comportamiento (¡experimenta!). 🤖\n' +
+    '\n' +
+    '¡Anímate a usarme y compártelo con tus amigos! 🚀 ¡Espero ser de gran ayuda! 😉\n' +
+    '¿Necesitas un bot más personalizado?  Contacta con Ariel al +5358688185. 🤖✨',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '3dfd5e8d3b809500429d7c3fae61ee74'
+}
