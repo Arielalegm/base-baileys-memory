@@ -7,6 +7,28 @@ const { getAIResponse, isBanned } = require('./src/services/aiService')
 const { handleCommands, getBotActive } = require('./src/handlers/commandHandler')
 const TimeService = require('./src/services/timeService');
 
+const flowSaludo = addKeyword(['hola', 'Hola'])
+    .addAnswer(`¡Hola! 👋 Soy tu nuevo asistente de IA en WhatsApp. 😊 Puedo ayudarte con:
+*   Responder preguntas generales.
+*   Traducir texto.
+*   Generar ideas.
+*   Resumir textos.
+*   Proporcionar información.
+*   Ayudar a redactar.
+*   Ofrecer consejos.
+*   Convertir unidades.
+*   Crear historias.
+
+Guárdame en tus contactos, nunca se sabe cuando pueda sacarte de un apuro😎!!!
+*Importante:* No estoy conectado a internet. 😅
+
+*Comandos útiles:*
+*   /reset: Borra mi memoria y comienza un nuevo chat. 🧠
+*   /prompt: Modifica mi comportamiento (¡experimenta!). 🤖
+
+¡Anímate a usarme y compártelo con tus amigos! 🚀 ¡Espero ser de gran ayuda! 😉
+¿Necesitas un bot más personalizado?  Contacta con Ariel al +5358688185. 🤖✨`)
+
 const flowCatchAll = addKeyword([])
     .addAction(async (ctx, { flowDynamic }) => {
         console.log({
@@ -38,7 +60,7 @@ const flowCatchAll = addKeyword([])
 
 const main = async () => {
     const adapterDB = new MockAdapter()
-    const adapterFlow = createFlow([flowCatchAll])
+    const adapterFlow = createFlow([flowSaludo, flowCatchAll])
     const adapterProvider = createProvider(BaileysProvider)
 
     const client = createBot({
