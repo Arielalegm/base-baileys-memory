@@ -2,10 +2,10 @@
   key: {
     remoteJid: '5358688185@s.whatsapp.net',
     fromMe: false,
-    id: '3FC7D85A9B4DB25EDE96',
+    id: '3FE2CF0E9E1633DF8D12',
     participant: undefined
   },
-  messageTimestamp: 1741917976,
+  messageTimestamp: 1741918299,
   pushName: 'iariel',
   broadcast: false,
   message: Message {
@@ -20,8 +20,8 @@
   from: '5358688185'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_b9e1fb4c-83c8-43e4-9990-dd21302ad8a4',
-  keyword: 'key_46f40b50-2aab-423b-ab8e-932ce631d823',
+  ref: 'ans_c6040463-235e-4e24-96a7-474973fe6d77',
+  keyword: 'key_c37f4884-a0d4-403c-abfb-8a153a250b61',
   answer: '¡Hola! 👋 Soy tu nuevo asistente de IA en WhatsApp. 😊 Puedo ayudarte con:\n' +
     '*   Responder preguntas generales.\n' +
     '*   Traducir texto.\n' +
@@ -33,6 +33,7 @@
     '*   Convertir unidades.\n' +
     '*   Crear historias.\n' +
     '\n' +
+    'Guárdame en tus contactos, nunca se sabe cuando pueda sacarte de un apuro😎!!!\n' +
     '*Importante:* No estoy conectado a internet. 😅\n' +
     '\n' +
     '*Comandos útiles:*\n' +
@@ -53,5 +54,47 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '3dfd5e8d3b809500429d7c3fae61ee74'
+  refSerialize: '2b6ce570a42ddaa9db03be2e0295093e'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5358688185@s.whatsapp.net',
+    fromMe: false,
+    id: '3F6E55D081D08477CA80',
+    participant: undefined
+  },
+  messageTimestamp: 1741918305,
+  pushName: 'iariel',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'ue tal estas',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: 'iariel',
+  body: 'ue tal estas',
+  from: '5358688185'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_308e0237-9459-4da8-9f1e-ed1fa6433f92',
+  keyword: 'key_1aebe5ed-df7f-4747-87d8-80eef0e4710e',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '46a548799fe241dde202be8a6f846e60'
 }
